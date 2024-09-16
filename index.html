@@ -73,6 +73,41 @@
     margin: 20px auto;
     display: block;
   }
+  /* Blog/Articles Section Styling */
+  #blog {
+    background-color: #1e1e1e; /* Darker background for section */
+    color: #e0e0e0; /* Light text */
+    padding: 60px 0;
+  }
+
+  #blog h2 {
+    color: #ffcc00; /* Accent color for section heading */
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .card {
+    background-color: #2e2e2e; /* Darker card background */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  .card-title {
+    color: #ffcc00; /* Accent color for blog titles */
+  }
+  .card-text {
+    font-size: 16px;
+  }
+  .btn-primary {
+    background-color: #ffcc00; /* Accent button color */
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+  }
 </style>
 </head>
 <body>
@@ -98,8 +133,7 @@
             <h5 class="card-title">PDF Renaming Automation</h5>
             <p class="card-text">Automated renaming of PDF files based on an Excel file to streamline document management.</p>
             <p><strong>Technologies:</strong> Python, Excel</p>
-            <a href="https://medium.com/@lindaolela/how-i-automated-the-renaming-of-pdf-files-with-python-ce8fbca92ac3" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary" target="_blank">View on GitHub</a>
+            <a href="#" class="btn btn-primary" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -111,8 +145,7 @@
             <h5 class="card-title">Flask Stock Trading App</h5>
             <p class="card-text">A web application that allows users to track stock prices in real-time and manage portfolios.</p>
             <p><strong>Technologies:</strong> Flask, Python, JavaScript, SQL, HTML/CSS</p>
-            <a href="https://medium.com/@lindaolela/how-i-solved-the-mystery-of-the-stolen-cs50-duck-9f08805db692" class="btn btn-primary">Blog Post</a>
-            <a href="https://github.com/code50/130731715/blob/main/week7/fiftyville/log.sql" class="btn btn-secondary"  target="_blank">View on GitHub</a> 
+            <a href="https://github.com/code50/130731715/blob/main/week7/fiftyville/log.sql" class="btn btn-primary"  target="_blank">View on GitHub</a> 
           </div>
         </div>
       </div>
@@ -124,8 +157,7 @@
             <h5 class="card-title">Portfolio Website</h5>
             <p class="card-text">My personal portfolio website to showcase projects and skills.</p>
             <p><strong>Technologies:</strong> HTML, CSS, Bootstrap</p>
-            <a href="#" class="btn btn-primary">Blog Post</a>
-            <a href="#" class="btn btn-secondary">Source Code</a>
+            <a href="#" class="btn btn-primary" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -207,6 +239,51 @@
   <h2>Blog</h2>
   <p>Check out my latest articles on Medium and LinkedIn about software development and data analysis.</p>
  </section>
+
+ <!-- Blog/Articles Section -->
+<section id="blog" class="container py-5">
+  <h2 class="text-center mb-5">Blog & Articles</h2>
+  <div class="row">
+      <!-- Blog Post 1 -->
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">How to Build a Flask App</h5>
+                  <p class="card-text">An in-depth guide on building a Flask application from scratch, including user authentication and real-time updates.</p>
+                  <p><small>Published on: September 08, 2024</small></p>
+                  <a href="https://medium.com/@lindaolela/my-journey-from-concept-to-real-time-price-updates-e0cc755517c6" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Automating PDF Renaming with Python</h5>
+                  <p class="card-text">Learn how to automate the process of renaming PDF files using Python scripts and Excel integration.</p>
+                  <p><small>Published on: September 12, 2024</small></p>
+                  <a href="https://medium.com/@lindaolela/how-i-automated-the-renaming-of-pdf-files-with-python-ce8fbca92ac3" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="col-md-4 mb-4">
+          <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Introduction to Microsoft Fabric</h5>
+                  <p class="card-text">A detailed walk-through of transforming data with Microsoft Fabric and its applications in data analysis.</p>
+                  <p><small>Published on: August 11, 2024</small></p>
+                  <a href="https://medium.com/@lindaolela/transforming-data-with-microsoft-fabric-a-step-by-step-guide-for-beginners-a92098f6cd4c" class="btn btn-primary" target="_blank">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Add more blog posts as needed -->
+  </div>
+</section>
+
 
  <!-- About Section -->
  <section id="about" class="container py-5">
