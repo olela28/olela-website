@@ -85,36 +85,59 @@
     font-size: 36px;
     margin-bottom: 40px;
   }
-  .card {
+  .blog-card {
     background-color: #2e2e2e; /* Darker card background */
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  .card:hover {
+  .blog-card:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
   }
   .card-img-top {
     height: 200px;
     object-fit: cover; /* Ensure consistent image size */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: opacity 0.3s ease;
   }
+  .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlay-text {
+        color: #ffcc00;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card-img-container:hover .overlay {
+        opacity: 1; /* Show overlay on hover */
+    }
   .card-title {
     color: #ffcc00; /* Accent color for blog titles */
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
   }
   .card-text {
     font-size: 16px;
-    line-height: 1.6;
   }
   .btn-primary {
     background-color: #ffcc00; /* Accent button color */
     border: none;
-    font-size: 14px;
   }
   .btn-primary:hover {
     background-color: #e6b800; /* Darker yellow on hover */
@@ -257,42 +280,55 @@
   <div class="row">
       <!-- Blog Post 1 -->
       <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="static/pictures/oval.jpg">
-              <div class="card-body">
-                  <h5 class="card-title">How to Build a Flask App</h5>
-                  <p class="card-text">An in-depth guide on building a Flask application from scratch, including user authentication and real-time updates.</p>
-                  <p><small>Published on: September 08, 2024</small></p>
-                  <a href="https://medium.com/@lindaolela/my-journey-from-concept-to-real-time-price-updates-e0cc755517c6" class="btn btn-primary" target="_blank">Read More</a>
+          <div class="card blog-card">
+            <div class="card-img-container">
+            <img src="static/pictures/oval.jpg" class="card-img-top" alt="Web App">
+            <div class="overlay">
+              <h5 class="overlay-text">How to Build a Flask App</h5>
+            </div>
+          </div>
+          <div class="card-body">
+              <p class="card-text">An in-depth guide on building a Flask application from scratch, including user authentication and real-time updates.</p>
+              <p><small>Published on: September 08, 2024</small></p>
+              <a href="https://medium.com/@lindaolela/my-journey-from-concept-to-real-time-price-updates-e0cc755517c6" class="btn btn-primary" target="_blank">Read More</a>
               </div>
           </div>
       </div>
 
       <!-- Blog Post 2 -->
       <div class="col-md-4 mb-4">
-          <div class="card">
+          <div class="card blog-card">
+            <div class="card-img-container">
             <img src="static/pictures/milky.jpg" class="card-img-top" alt="Renaming">
-              <div class="card-body">
-                  <h5 class="card-title">Automating PDF Renaming with Python</h5>
-                  <p class="card-text">Learn how to automate the process of renaming PDF files using Python scripts and Excel integration.</p>
-                  <p><small>Published on: September 12, 2024</small></p>
-                  <a href="https://medium.com/@lindaolela/how-i-automated-the-renaming-of-pdf-files-with-python-ce8fbca92ac3" class="btn btn-primary" target="_blank">Read More</a>
-              </div>
+            <div class="overlay">
+              <h5 class="overlay-text">Automating PDF Renaming with Python</h5>
+            </div>
           </div>
+          <div class="card-body">
+              <p class="card-text">Learn how to automate the process of renaming PDF files using Python scripts and Excel integration.</p>
+              <p><small>Published on: September 12, 2024</small></p>
+              <a href="https://medium.com/@lindaolela/how-i-automated-the-renaming-of-pdf-files-with-python-ce8fbca92ac3" class="btn btn-primary" target="_blank">Read More</a>
+          </div>
+        </div>
       </div>
 
       <!-- Blog Post 3 -->
       <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="static/pictures/powder.jpg" class="card-img-top" alt="Microsoft Fabric"
-              <div class="card-body">
-                  <h5 class="card-title">Introduction to Microsoft Fabric</h5>
+          <div class="card blog-card">
+            <div class="card-img-container">
+              <img src="static/pictures/powder.jpg" class="card-img-top" alt="Microsoft Fabric">
+              <div class="overlay">
+                  <h5 class="overlay-text">Introduction to Microsoft Fabric</h5>
+              </div>
+            </div>
+            <div class="card-body">
                   <p class="card-text">A detailed walk-through of transforming data with Microsoft Fabric and its applications in data analysis.</p>
                   <p><small>Published on: August 11, 2024</small></p>
                   <a href="https://medium.com/@lindaolela/transforming-data-with-microsoft-fabric-a-step-by-step-guide-for-beginners-a92098f6cd4c" class="btn btn-primary" target="_blank">Read More</a>
               </div>
           </div>
       </div>
+    </div>
 
       <!-- Add more blog posts as needed -->
   </div>
