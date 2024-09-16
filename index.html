@@ -90,23 +90,40 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .card:hover {
     transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Ensure consistent image size */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .card-title {
     color: #ffcc00; /* Accent color for blog titles */
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .card-text {
     font-size: 16px;
+    line-height: 1.6;
   }
   .btn-primary {
     background-color: #ffcc00; /* Accent button color */
     border: none;
+    font-size: 14px;
   }
   .btn-primary:hover {
     background-color: #e6b800; /* Darker yellow on hover */
+  }
+  /* Responsive Behaviour */
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 150px;
+    }
   }
 </style>
 </head>
@@ -241,6 +258,7 @@
       <!-- Blog Post 1 -->
       <div class="col-md-4 mb-4">
           <div class="card">
+            <img src="static/pictures/oval.jpg">
               <div class="card-body">
                   <h5 class="card-title">How to Build a Flask App</h5>
                   <p class="card-text">An in-depth guide on building a Flask application from scratch, including user authentication and real-time updates.</p>
@@ -253,6 +271,7 @@
       <!-- Blog Post 2 -->
       <div class="col-md-4 mb-4">
           <div class="card">
+            <img src="static/pictures/milky.jpg" class="card-img-top" alt="Renaming">
               <div class="card-body">
                   <h5 class="card-title">Automating PDF Renaming with Python</h5>
                   <p class="card-text">Learn how to automate the process of renaming PDF files using Python scripts and Excel integration.</p>
@@ -265,6 +284,7 @@
       <!-- Blog Post 3 -->
       <div class="col-md-4 mb-4">
           <div class="card">
+            <img src="static/pictures/powder.jpg" class="card-img-top" alt="Microsoft Fabric"
               <div class="card-body">
                   <h5 class="card-title">Introduction to Microsoft Fabric</h5>
                   <p class="card-text">A detailed walk-through of transforming data with Microsoft Fabric and its applications in data analysis.</p>
