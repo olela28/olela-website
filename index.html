@@ -207,6 +207,67 @@
             font-size: 16px;
         }
     }
+    /* Contact Section Styling */
+    #contact {
+        background-color: #1f1f1f; /* Dark background */
+        color: #ffffff; /* Light text */
+        padding: 60px 0;
+    }
+
+    #contact h2 {
+        color: #ffcc00; /* Accent color for section heading */
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    /* Contact Form Styling */
+    .form-control {
+        background-color: #333333; /* Dark background for input fields */
+        border: 1px solid #ffcc00; /* Border matching accent color */
+        color: #ffffff; /* Light text */
+    }
+
+    .form-control:focus {
+        border-color: #ffcc00;
+        box-shadow: none;
+    }
+
+    .btn-warning {
+        background-color: #ffcc00;
+        border-color: #ffcc00;
+    }
+
+    .btn-outline-light {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+
+    .btn-outline-light:hover {
+        background-color: #ffffff;
+        color: #1f1f1f;
+    }
+
+    /* Social Links Styling */
+    .fab {
+        margin-right: 10px;
+    }
+
+    a {
+        color: #ffcc00;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ffcc00;
+        text-decoration: underline;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #contact h2 {
+            font-size: 28px;
+        }
+    }
 </style>
 </head>
 <body>
@@ -471,6 +532,45 @@
     </div>
   </div>
 </section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center mb-5">Contact Me</h2>
+
+  <!-- Contact Form -->
+  <div class="row justify-content-center">
+      <div class="col-md-8">
+          <form>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning w-100">Send Message</button>
+          </form>
+      </div>
+  </div>
+
+  <!-- Social Links -->
+  <div class="text-center mt-5">
+      <p>You can also reach me on:</p>
+      <a href="https://www.linkedin.com/in/linda-olela/" target="_blank" class="btn btn-outline-light mx-2">
+          <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+      </a>
+      <a href="https://github.com/olela28" target="_blank" class="btn btn-outline-light mx-2">
+          <i class="fab fa-github fa-2x"></i> GitHub
+      </a>
+      <p class="mt-3">Or send me an email at: <a href="mailto:olelalinda@gmail.com" class="text-warning">your-email@example.com</a></p>
+  </div>
+</section>
+
 
 <!-- Sticky Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
