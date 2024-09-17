@@ -11,6 +11,12 @@
   a.nav-link:hover {
     color: #bb86fc;
   }
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #contact h2 {
+        font-size: 28px;
+    }
+  }
   h1, h2, h3, h4, h5, h6 {
     color: #bb86fc !important;
   }
