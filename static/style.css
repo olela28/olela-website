@@ -120,7 +120,7 @@
         font-size: 20px;
         text-align: center;
         position: absolute;
-        top: 80%; /* Start off-screen */
+        top: 50%; /* Start off-screen */
         left: 0;
         width: 100%;
         height: 100%;
