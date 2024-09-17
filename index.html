@@ -418,7 +418,7 @@
  <!-- Blog/Articles Section -->
 <section id="blog" class="container py-5">
   <h2 class="text-center mb-5">Blog & Articles</h2>
-  <div class="row">
+  <div class="row" id="blog-container">
       <!-- Blog Post 1 -->
       <div class="col-md-4 mb-4">
           <div class="card blog-card">
@@ -429,7 +429,7 @@
             </div>
           </div>
           <div class="card-body">
-              <p class="card-text">An in-depth guide on building a Flask application from scratch, including user authentication and real-time updates.</p>
+              <p class="card-text">An in-depth guide on building a Flask application from scratch, including user authentication & real-time updates.</p>
               <p><small>Published on: September 08, 2024</small></p>
               <span class="badge badge-secondary">Web Development</span>
               <a href="https://medium.com/@lindaolela/my-journey-from-concept-to-real-time-price-updates-e0cc755517c6" class="btn btn-primary" target="_blank">Read More</a>
@@ -471,8 +471,10 @@
           </div>
       </div>
     </div>
-
-      <!-- Add more blog posts as needed -->
+  </div>
+  <div class="text-center mt-4">
+    <button id="load-more" class="btn btn-warning">Load More</button>
+  </div>
   </div>
 </section>
 
@@ -578,6 +580,31 @@
   </div>
 </nav>
 
+<script>
+  // Example JavaScript to handle loading more posts
+  document.getElementById('load-more').addEventListener('click', function () {
+    // Fetch or append more blog post elements here
+    var blogContainer = document.getElementById('blog-container');
+
+    // Simulating adding new posts dynamically (this would normally come from a server)
+    for (var i=0; i<3; i++) {
+      var newPost = document.createElement('div');
+      newPost.classList.add('col-md-4', 'mb-4');
+      newPost.innerHTML =
+      <div class="card">
+        <img src="your-image-path.jpg" class="card-img-top" alt="Post Image">
+        <div class="card-body">
+          <h5 class="card-title">New Blog Post Title ${i+4}</h5>
+          <p class="card-text">This is a short description of the new blog post ${i+4}.</p>
+          <a href="#https://medium.com/@lindaolela/step-by-step-guide-building-a-stock-portfolio-web-application-00f654bd9753-${i+4}" target="_blank" class="btn btn-warning">Read More</a>
+          </div>
+          </div>
+          ;
+          blogContainer.appendChild(newPost);
+    }
+
+  });
+</script>
 
 <!-- Bootstrap JS and dependencies (jQuery and Popper) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
