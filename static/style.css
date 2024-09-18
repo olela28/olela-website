@@ -147,3 +147,6 @@ h1, h2, h3, h4, h5, h6 {
 .text-warning {
   color: #f43f5e;
 }
+.btn-outline-primary {
+  color: #a855f7;
+}
