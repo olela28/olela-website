@@ -19,7 +19,7 @@
       padding-top: 70px; /* Adjust based on the height of your navbar */
     }
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .list-unstyled {
     color: #bb86fc !important;
   }
   .card {
@@ -121,7 +121,7 @@
         font-size: 20px;
         text-align: center;
         position: absolute;
-        top: 10%; /* Start off-screen */
+        top: 20%; /* Start off-screen */
         left: 0;
         width: 100%;
         height: 100%;
