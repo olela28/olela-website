@@ -139,7 +139,7 @@
         opacity: 1; /* Show overlay on hover */
     }
   .card-title {
-    color: #007bff; /* Accent color for blog titles */
+    color: #007bff !important; /* Accent color for blog titles */
     font-size: 18px;
   }
   .card-text {
@@ -193,7 +193,7 @@
     }
 
     .fab, .fas {
-        color: #ffcc00; /* Icon color */
+        color: #00ffff; /* Icon color */
         margin-bottom: 10px;
     }
 
