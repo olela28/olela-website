@@ -60,11 +60,12 @@
     margin: 0 auto;
     max-width: 800px; /* Limit width for readability */
     text-align: center;
+    padding: 0 15px;
   }
   .profile-img {
     border-radius: 50%; /* Circular image */
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     margin: 20px auto;
     display: block;
