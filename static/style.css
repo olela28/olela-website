@@ -20,7 +20,7 @@ a.nav-link:hover {
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #a855f7 !important; /* Accent for headings */
+  color: #14b8a6 !important; /* Accent for headings */
 }
 .card {
   background-color: #2b2f45; /* Secondary background for cards */
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 .progress-bar {
-  background-color: #a855f7;
+  background-color: #14b8a6;
 }
 /* Contact Section */
 #contact {
