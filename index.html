@@ -378,29 +378,29 @@
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const blogPostsContainer = document.getElementById('blog-posts');
+    const loadMoreBtn = document.getElementById('load-more');
+    const blogContainer = document.getElementById('blog-container');
     let page = 1;
 
     function loadBlogPosts() {
-      fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@yourMediumUsername&page=${page}`)
+      fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@lindaolela&page=${page}`)
         .then(response => response.json())
         .then(data => {
           if (data.items && data.items.length > 0) {
             data.items.forEach(post => {
-              const postElement = document.createElement('div');
+              const postElement = document.createElement('article');
               postElement.className = 'col-md-4 mb-4';
               postElement.innerHTML = `
-                <div class="card">
+                <div class="card blog-card">
                   <img src="${post.thumbnail}" class="card-img-top" alt="${post.title}">
                   <div class="card-body">
                     <h5 class="card-title">${post.title}</h5>
-                    <p class="card-text">${post.description}</p>
+                    <p class="card-text">${post.description.substring(0, 20)}...</p>
                     <a href="${post.link}" class="btn btn-primary" target="_blank">Read More</a>
                   </div>
                 </div>
               `;
-              blogPostsContainer.appendChild(postElement);
+              blogContainer.appendChild(postElement);
             });
             page++;
           } else {
@@ -409,11 +409,20 @@
         });
     }
 
-    loadMoreBtn.addEventListener('click', loadBlogPosts);
-
     // Initial load
     loadBlogPosts();
+
+    loadMoreBtn.addEventListener('click', loadBlogPosts);
   });
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js (Bootstrap's tooltips and popovers depend on it) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
