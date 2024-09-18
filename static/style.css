@@ -143,6 +143,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   margin-bottom: 40px;
 }
+#skills h5 {
+  color: #bb86fc;
+}
 
 .progress-bar {
   background-color: #ffcc00; /* Muted Yellow for Skill Progress Bars */
