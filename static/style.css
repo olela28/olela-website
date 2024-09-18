@@ -82,6 +82,11 @@
     font-size: 36px;
     margin-bottom: 40px;
   }
+  /* Blog card styling */
+  .blog-link {
+    text-decoration: none;
+    color: inherit;
+  }
   .blog-card {
     background-color: #2e2e2e; /* Darker card background */
     border: none;
@@ -92,6 +97,9 @@
   .blog-card:hover {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  .card-img-container {
+    position: relative; /* For overlay positioning */
   }
   .card-img-top {
     height: 200px;
@@ -143,6 +151,11 @@
   }
   .btn-primary:hover {
     background-color: #e6b800; /* Darker yellow on hover */
+  }
+  /* Hover effect for the entire card */
+  .blog-link:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
   }
   /* Responsive Behaviour */
   @media (max-width: 768px) {
