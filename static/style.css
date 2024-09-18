@@ -28,7 +28,7 @@ a.nav-link:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffcc00 !important; /* Muted Yellow for Headings */
+  color: #ffcc00; /* Muted Yellow for Headings */
 }
 
 .card {
@@ -183,4 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-light:hover {
   background-color: #ffffff;
   color: #1f1f1f;
+}
+.btn-outline-primary {
+  content: #ffcc00;
 }
