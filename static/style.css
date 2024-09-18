@@ -28,7 +28,7 @@ a.nav-link:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffcc00; /* Muted Yellow for Headings */
+  color: #bb86fc; /* Muted Yellow for Headings */
 }
 
 .card {
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fab, .fas {
-  color: #bb86fc; /* Light Purple for Icons */
+  color: #ffcc00; /* Light Purple for Icons */
 }
 
 #contact {
