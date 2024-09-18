@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about h2 {
-  color: #ffcc00; /* Muted Yellow for About Heading */
+  color: #bb86fc; /* Muted Yellow for About Heading */
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blog-card:hover {
+  background-color: #bb86fc;
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
@@ -139,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #skills h2 {
-  color: #ffcc00; /* Muted Yellow for Section Heading */
+  color: #bb86fc; /* Muted Yellow for Section Heading */
   font-size: 36px;
   margin-bottom: 40px;
 }
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact h2 {
-  color: #ffcc00; /* Muted Yellow for Section Heading */
+  color: #bb86fc; /* Muted Purple for Section Heading */
   font-size: 36px;
   margin-bottom: 40px;
 }
