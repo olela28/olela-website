@@ -381,41 +381,51 @@
     const loadMoreBtn = document.getElementById('load-more');
     const blogContainer = document.getElementById('blog-container');
     let page = 1;
+    const postsPerLoad = 2; // Number of posts to load per click
+    let totalPosts = 0;
+    let loadedPosts = 0;
 
     function loadBlogPosts() {
       fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@lindaolela&page=${page}`)
         .then(response => response.json())
         .then(data => {
           if (data.items && data.items.length > 0) {
-            data.items.forEach(post => {
-              const postElement = document.createElement('article');
+            totalPosts = data.items.length; // Get the total number of posts
+            let postBatch = data.items.slice(loadedPosts, loadedPosts + postsPerLoad); // Load only two posts per click
+
+            postBatch.forEach(post => {
+              const postElement = document.createElement('div');
               postElement.className = 'col-md-4 mb-4';
               postElement.innerHTML = `
                 <div class="card blog-card">
                   <img src="${post.thumbnail}" class="card-img-top" alt="${post.title}">
                   <div class="card-body">
                     <h5 class="card-title">${post.title}</h5>
-                    <p class="card-text">${post.description.substring(0, 20)}...</p>
+                    <p class="card-text">${post.description.substring(0, 40)}...</p>
                     <a href="${post.link}" class="btn btn-primary" target="_blank">Read More</a>
                   </div>
                 </div>
               `;
               blogContainer.appendChild(postElement);
             });
-            page++;
+            loadedPosts += postsPerLoad; // Update the count of loaded posts
+
+            // Hide Load More button if all posts are loaded
+            if(loadedPosts >= totalPosts) {
+              loadMoreBtn.style.display = 'none'; 
+            }
           } else {
-            loadMoreBtn.style.display = 'none';
+            loadMoreBtn.style.display = 'none'; // Hide button if no posts are found
           }
-        });
-    }
-
-    // Initial load
-    loadBlogPosts();
-
-    loadMoreBtn.addEventListener('click', loadBlogPosts);
-  });
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        })
+        .catch(error => console.log('Error loading blog posts', error));
+      }
+      loadMoreBtn.addEventListener('click', loadedBlogPosts);
+    });
   </script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 <!-- Popper.js (Bootstrap's tooltips and popovers depend on it) -->
