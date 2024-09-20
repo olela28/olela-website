@@ -190,3 +190,28 @@ h1, h2, h3, h4, h5, h6 {
 .btn-outline-primary {
   content: #ffcc00;
 }
+
+/* Thank You Message Styling */
+#thankYouMessage {
+  display: none; /* Initially hidden */
+  background-color: #bb86fc; /* Light Purple background for the popup */
+  color: #ffffff; /* Light Text */
+  padding: 15px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center;
+  animation: fadeInOut 6s ease-in-out; /* Fade in and out over 6 seconds */
+}
+
+/* Fade In/Out Animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
