@@ -42,13 +42,19 @@ a.nav-link:hover {
 }
 
 .btn-warning {
-  background-color: #a2e2e0;
+  background-color: #ffffff;
   border-color: #a2e2e0;
 }
 
 .btn-outline-warning {
-  background-color: #a2e2e0;
+  background-color: #ffffff;
   color: #090102;
+  border-color: #090102;
+}
+
+.btn-outline-warning:hover {
+  background-color:rgba(0, 0, 0, 0.3);
+  color:#ffffff;
 }
 
 .btn-outline-light:hover {
@@ -139,13 +145,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fab, .fas {
-  color: #a2e2e0; /* Light Purple for Icons */
+  color: #a2e2e0; /* Mint for Icons */
+  text-emphasis-color: #090102;
 }
 
 .form-control {
-  background-color: #333333; /* Dark Background for Input Fields */
-  border: 1px solid #a2e2e0; /* Yellow Border */
-  color: #ffffff; /* Light Text */
+  background-color: #ffffff; /* Dark Background for Input Fields */
+  border: 1px solid #f4f4f4; /* Yellow Border */
+  color: #090102; /* Light Text */
 }
 
 .form-control:focus {
