@@ -56,13 +56,24 @@ a.nav-link:hover {
   color: #1f1f1f;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   color: #a2e2e0 !important; /* Muted Yellow for Headings */
 }
 
+#contact h2, #skills h2, #blog h2, #about h2 {
+  color: #bb86fc; /* Muted Purple for Section Heading */
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#blog, #skills, #about, #contact {
+  background-color: #ffffff; /* Light Background for Blog Section */
+  color: #090102; /* Dark grey Text */
+  padding: 60px 0;
+}
+
 .card {
-  background-color: #ffffff; /* Dark Background for Cards */
+  background-color: #f4f4f4; /* Light Background for Cards */
   color: #090102; /* Light Text for Cards */
   border: none;
   border-radius: 10px;
@@ -76,13 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-title {
   color: #a2e2e0; /* Muted Yellow for Card Titles */
-}
-
-#about h2 {
-  color: #bb86fc; /* Muted Yellow for About Heading */
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
 #about .bio {
@@ -101,18 +105,6 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   margin: 20px auto;
   display: block;
-}
-
-#blog, #skills, #about, #contact {
-  background-color: #ffffff; /* Light Background for Blog Section */
-  color: #090102; /* Dark grey Text */
-  padding: 60px 0;
-}
-
-#blog h2 {
-  color: #a2e2e0; /* Muted Yellow for Blog Heading */
-  font-size: 36px;
-  margin-bottom: 40px;
 }
 
 /* Blog card styling */
@@ -138,11 +130,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
-#skills h2 {
-  color: #bb86fc; /* Muted Yellow for Section Heading */
-  font-size: 36px;
-  margin-bottom: 40px;
-}
 #skills h5 {
   color: #bb86fc;
 }
@@ -153,12 +140,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .fab, .fas {
   color: #a2e2e0; /* Light Purple for Icons */
-}
-
-#contact h2 {
-  color: #bb86fc; /* Muted Purple for Section Heading */
-  font-size: 36px;
-  margin-bottom: 40px;
 }
 
 .form-control {
