@@ -38,7 +38,7 @@ a.nav-link:hover {
 
 .btn-primary:hover {
   background-color: #bb86fc; /* Darker Yellow on Hover */
-  color:rgba(0, 0, 0, 0.2);
+  color: #090102;
 }
 
 .btn-warning {
@@ -53,8 +53,8 @@ a.nav-link:hover {
 }
 
 .btn-outline-warning:hover {
-  background-color: #000;
-  border-color: none;
+  background-color: #a2e2e0;
+  border-color: #a2e2e0;
   color:#ffffff;
 }
 
