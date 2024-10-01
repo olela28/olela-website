@@ -1,8 +1,8 @@
-/* Yellow and Purple Palette (Classy Minimalist Look) */
+/* Mint and Purple Palette (Classy Minimalist Look) */
 
 body {
-  background-color: #121212; /* Dark Background */
-  color: #e0e0e0; /* Light Gray Text */
+  background-color: #ffffff; /* Light Background */
+  color: #090102; /* Dark Gray Text */
 }
 
 html, body {
@@ -10,7 +10,7 @@ html, body {
 }
 
 .navbar, .footer {
-  background-color: #2d2d2d; /* Dark Gray for Navbar & Footer */
+  background-color: #ffffff; /* Light color for Navbar & Footer */
 }
 
 .navbar-brand, .nav-link, .footer {
@@ -48,7 +48,7 @@ a.nav-link:hover {
 
 .btn-outline-warning {
   background-color: #a2e2e0;
-  content: inherit;
+  color: #090102;
 }
 
 .btn-outline-light:hover {
@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  background-color: #1e1e1e; /* Dark Background for Cards */
-  color: #e0e0e0; /* Light Text for Cards */
+  background-color: #ffffff; /* Dark Background for Cards */
+  color: #090102; /* Light Text for Cards */
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -76,14 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-title {
   color: #a2e2e0; /* Muted Yellow for Card Titles */
-}
-
-
-
-#about {
-  background-color: #1e1e1e; /* Dark Background for About Section */
-  padding: 60px 0;
-  color: #e0e0e0;
 }
 
 #about h2 {
@@ -111,9 +103,9 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-#blog {
-  background-color: #2d2d2d; /* Darker Background for Blog Section */
-  color: #f5f5f5; /* Light Text */
+#blog, #skills, #about, #contact {
+  background-color: #ffffff; /* Light Background for Blog Section */
+  color: #090102; /* Dark grey Text */
   padding: 60px 0;
 }
 
@@ -125,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Blog card styling */
 .blog-card {
-  background-color: #3a3a3a; /* Dark Background for Cards */
+  background-color: #ffffff; /* Dark Background for Cards */
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -146,12 +138,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
-#skills {
-  background-color: #1f1f1f; /* Dark Background */
-  color: #ffffff; /* Light Text */
-  padding: 60px 0;
-}
-
 #skills h2 {
   color: #bb86fc; /* Muted Yellow for Section Heading */
   font-size: 36px;
@@ -167,12 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .fab, .fas {
   color: #a2e2e0; /* Light Purple for Icons */
-}
-
-#contact {
-  background-color: #1f1f1f; /* Dark Background for Contact Section */
-  color: #ffffff; /* Light Text */
-  padding: 60px 0;
 }
 
 #contact h2 {
