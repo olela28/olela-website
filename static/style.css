@@ -62,7 +62,7 @@ a.nav-link:hover {
   color: #1f1f1f;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   color: #a2e2e0 !important; /* Muted Yellow for Headings */
 }
 
@@ -136,8 +136,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
-#skills h5 {
-  color: #bb86fc;
+#skills h5, #blog h5, #blog h3 {
+  color: #bb86fc !important;
 }
 
 .progress-bar {
