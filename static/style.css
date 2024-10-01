@@ -27,6 +27,36 @@ a.nav-link:hover {
   }
 }
 
+.btn-primary {
+  background-color: #a2e2e0; /* Muted Mint for Buttons */
+  border: none;
+}
+
+.btn-outline-primary {
+  content: #a2e2e0;
+}
+
+.btn-primary:hover {
+  background-color: #bb86fc; /* Darker Yellow on Hover */
+  color:rgba(0, 0, 0, 0.2);
+}
+
+.btn-warning {
+  background-color: #a2e2e0;
+  border-color: #a2e2e0;
+}
+
+.btn-outline-warning {
+  background-color: #a2e2e0;
+  content: inherit;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   color: #a2e2e0 !important; /* Muted Yellow for Headings */
 }
@@ -48,14 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #a2e2e0; /* Muted Yellow for Card Titles */
 }
 
-.btn-primary {
-  background-color: #a2e2e0; /* Muted Yellow for Buttons */
-  border: none;
-}
 
-.btn-primary:hover {
-  background-color: #a2e2e0; /* Slightly Darker Yellow on Hover */
-}
 
 #about {
   background-color: #1e1e1e; /* Dark Background for About Section */
@@ -123,15 +146,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
-.btn-primary {
-  background-color: #a2e2e0; /* Muted Yellow for Buttons */
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #bb86fc; /* Darker Yellow on Hover */
-}
-
 #skills {
   background-color: #1f1f1f; /* Dark Background */
   color: #ffffff; /* Light Text */
@@ -176,19 +190,6 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:focus {
   border-color: #a2e2e0;
   box-shadow: none;
-}
-
-.btn-warning {
-  background-color: #a2e2e0;
-  border-color: #a2e2e0;
-}
-
-.btn-outline-light:hover {
-  background-color: #ffffff;
-  color: #1f1f1f;
-}
-.btn-outline-primary {
-  content: #a2e2e0;
 }
 
 /* Thank You Message Styling */
