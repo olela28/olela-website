@@ -57,10 +57,13 @@ a.nav-link:hover {
   border-color: #a2e2e0;
   color:#ffffff;
 }
+.btn-outline-light {
+  color: #090102;
+}
 
 .btn-outline-light:hover {
   background-color: #090102;
-  color: #ffffff;
+    color: #ffffff;
 }
 
 h1, h3, h4, h5, h6 {
