@@ -41,26 +41,26 @@ a.nav-link:hover {
   color: #090102;
 }
 
-.btn-warning {
+.my-button {
   background-color: #ffffff;
   border-color: #a2e2e0;
 }
 
-.btn-warning.clicked {
+.my-button:active {
   background-color: #a2e2e0;
 }
 
-.btn-outline-warning {
+.my-button-outline {
   background-color: #ffffff;
   color: #090102;
   border-color: #090102;
 }
 
-.btn-outline-warning.clicked {
+.my-button-outline:active {
   background-color: #a2e2e0;
 }
 
-.btn-outline-warning:hover {
+.my-button-outline:hover {
   background-color: #a2e2e0;
   border-color: #a2e2e0;
   color:#ffffff;
