@@ -43,7 +43,7 @@ a.nav-link:hover {
 
 .my-button {
   background-color: #ffffff;
-  border-color: #a2e2e0;
+  border-color: #090102;
 }
 
 .my-button:active {
@@ -58,6 +58,8 @@ a.nav-link:hover {
 
 .my-button-outline:active {
   background-color: #a2e2e0;
+  color: #ffffff;
+  border-color: #a2e2e0;
 }
 
 .my-button-outline:hover {
