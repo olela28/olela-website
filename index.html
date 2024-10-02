@@ -296,10 +296,15 @@
 </div>
 
   <div class="text-center mt-4">
-    <button id="load-more" class="btn btn-outline-warning">Load More</button>
+    <button id="load-more" class="btn btn-outline-warning" onclick="changeColor(this)">Load More</button>
   </div>
   </div>
 </section>
+<script>
+  function changeColor(element) {
+    element.classList.toggle('clicked')
+  }
+</script>
 
 
  <!-- About Section -->

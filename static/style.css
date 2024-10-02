@@ -46,7 +46,7 @@ a.nav-link:hover {
   border-color: #a2e2e0;
 }
 
-.btn-warning:active {
+.btn-warning.clicked {
   background-color: #a2e2e0;
 }
 
@@ -56,7 +56,7 @@ a.nav-link:hover {
   border-color: #090102;
 }
 
-.btn-outline-warning:active {
+.btn-outline-warning.clicked {
   background-color: #a2e2e0;
 }
 
