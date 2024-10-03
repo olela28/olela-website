@@ -415,7 +415,7 @@
                   <img src="${post.thumbnail}" class="card-img-top" alt="${post.title}">
                   <div class="card-body">
                     <h5 class="card-title">${post.title}</h5>
-                    <p class="card-text">${post.seodescription.substring(0, 75)}...</p>
+                    <p class="card-text">${post.description.substring(0, 75)}...</p>
                     <a href="${post.link}" class="btn my-button-outline" target="_blank">Read More</a>
                   </div>
                 </div>
@@ -425,6 +425,7 @@
             loadedPosts += postsPerLoad; // Update the count of loaded posts
 
             // Hide Load More button if all posts are loaded
+            console.log(data);
             if(loadedPosts >= totalPosts) {
               loadMoreBtn.style.display = 'none'; 
             }
