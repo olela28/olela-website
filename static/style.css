@@ -1,8 +1,12 @@
 /* Mint and Purple Palette (Classy Minimalist Look) */
-
 body {
-  background-color: #ffffff; /* Light Background */
-  color: #090102; /* Dark Gray Text */
+  background-color: white; /* Default light mode background */
+  color: #090102; /* Default light mode text color */
+}
+
+body.black {
+  background-color: black; /* Dark mode background */
+  color: white; /* Dark mode text color */
 }
 
 html, body {
