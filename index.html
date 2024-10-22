@@ -49,7 +49,9 @@
   </div>
 </nav>
 
-  <button id="switch">Toggle Dark Mode</button>
+  <button id="switch">
+    <i id="mode-icon" class = "fas fa-moon"></i>
+  </button>
 
 
   <!-- Home Section -->
@@ -491,12 +493,24 @@
   });
 </script>
 
-  <script>
+ <script>
   const onoff = document.getElementById('switch');
+  const modeIcon = document.getElementById('mode-icon');
+  
   onoff.addEventListener('click', function() {
     document.body.classList.toggle('black');
+    
+    // Switch icons between sun and moon
+    if (document.body.classList.contains('black')) {
+      modeIcon.classList.remove('fa-moon');
+      modeIcon.classList.add('fa-sun');
+    } else {
+      modeIcon.classList.remove('fa-sun');
+      modeIcon.classList.add('fa-moon');
+    }
   });
 </script>
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
  
