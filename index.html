@@ -371,21 +371,6 @@
   </div>
 </section>
 
-  <!-- Social Links -->
-  <div class="text-center mt-5">
-      <p>You can also reach me on:</p>
-      <a href="https://www.linkedin.com/in/linda-olela/" target="_blank" class="btn btn-outline-light mx-2">
-          <i class="fab fa-linkedin fa-2x"></i> LinkedIn
-      </a>
-      <a href="https://github.com/olela28" target="_blank" class="btn btn-outline-light mx-2">
-          <i class="fab fa-github fa-2x"></i> GitHub
-      </a>
-      <a href="https://medium.com/@lindaolela" target="_blank" class="btn btn-outline-light mx-2">
-        <i class="fab fa-medium fa-2x"></i> Medium
-      </a>
-  </div>
-</section>
-
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
   <p>&copy; 2024 Linda's Portfolio. All rights reserved.</p>
@@ -468,6 +453,18 @@
     });
   });
 </script>
+
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
 
 <script>
   const form = document.getElementById('contactForm');
