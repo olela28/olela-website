@@ -45,6 +45,7 @@
         <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
+      <button id="switch" class="btn">🌙</button>
     </div>
   </div>
 </nav>
@@ -499,23 +500,31 @@
   });
 </script>
 
- <script>
-  const onoff = document.getElementById('switch');
-  const modeIcon = document.getElementById('mode-icon');
-  
-  onoff.addEventListener('click', function() {
-    document.body.classList.toggle('black');
-    
-    // Switch icons between sun and moon
-    if (document.body.classList.contains('black')) {
-      modeIcon.classList.remove('fa-moon');
-      modeIcon.classList.add('fa-sun');
-    } else {
-      modeIcon.classList.remove('fa-sun');
-      modeIcon.classList.add('fa-moon');
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const darkModeButton = document.getElementById("switch");
+    const sections = document.querySelectorAll("body, #about, #skills, #contact, #blog");
+
+    // Check and apply the saved preference
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      sections.forEach(section => section.classList.add("black"));
+      darkModeButton.textContent = "☀️"; // Update to light mode icon
     }
+
+    // Toggle dark mode on button click
+    darkModeButton.addEventListener("click", () => {
+      const isDarkMode = document.body.classList.toggle("black");
+      sections.forEach(section => section.classList.toggle("black"));
+
+      // Update button icon
+      darkModeButton.textContent = isDarkMode ? "☀️" : "🌙";
+
+      // Save preference to localStorage
+      localStorage.setItem("dark-mode", isDarkMode ? "enabled" : "disabled");
+    });
   });
 </script>
+
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
