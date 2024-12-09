@@ -12,7 +12,7 @@ body {
   color: #090102;
 }
 
-body.black, skills.black, about.black, contact.black, blog.black {
+body.black, #skills.black, #about.black, #contact.black, b#log.black {
   background-color: black; /* Dark mode background */
   color: white; /* Dark mode text color */
 }
