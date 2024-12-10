@@ -98,11 +98,7 @@ h1, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
-#blog, #skills, #about, #contact {
-  background-color: #ffffff; /* Light Background for Blog Section */
-  color: #090102; /* Dark grey Text */
-  padding: 60px 0;
-}
+
 
 .card {
   background-color: #ffffff; /* Light Background for Cards */
